@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b90b2e93-90b8-4619-be26-22c7debd5459" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test_math.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_math.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_math.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +35,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.All tests.executor": "Run",
     "Python tests.Python tests for test_math.test_small_numbers.executor": "Run",
     "Python tests.Python tests in test_math.py.executor": "Run",
+    "Python tests.login tests.executor": "Run",
     "Python.1.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -44,7 +47,12 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.All tests">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.positive test">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonSeleniumProject" />
       <option name="ENV_FILES" value="" />
@@ -107,7 +115,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_math.test_small_numbers" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_math.test_small_numbers" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonSeleniumProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,7 +126,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_math.test_small_numbers&quot;" />
+      <option name="_new_target" value="&quot;tests.test_math.test_small_numbers&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -133,7 +141,43 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_math.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_math.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="login tests" type="tests" factoryName="py.test">
+      <module name="pythonSeleniumProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13 (pythonSeleniumProject)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;-m login&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="positive test" type="tests" factoryName="py.test">
+      <module name="pythonSeleniumProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13 (pythonSeleniumProject)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;-m positive&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -141,13 +185,15 @@
       <item itemvalue="Python.1" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python tests.All tests" />
-      <item itemvalue="Python tests.Python tests for test_math.test_small_numbers" />
+      <item itemvalue="Python tests.login tests" />
+      <item itemvalue="Python tests.positive test" />
+      <item itemvalue="Python tests.Python tests for tests.test_math.test_small_numbers" />
       <item itemvalue="Python tests.Python tests in test_math.py" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests in test_math.py" />
-        <item itemvalue="Python tests.Python tests for test_math.test_small_numbers" />
+        <item itemvalue="Python tests.Python tests for tests.test_math.test_small_numbers" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.1" />
       </list>
