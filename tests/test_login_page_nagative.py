@@ -1,17 +1,7 @@
 import time
 
 import pytest
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-
-
-@pytest.fixture()
-def driver():
-    print("Creating chrome driver")
-    my_driver = webdriver.Chrome()
-    yield my_driver
-    print("Closing chrome driver")
-    my_driver.quit()
 
 
 class TestNegativeScenarios:
@@ -19,7 +9,6 @@ class TestNegativeScenarios:
     @pytest.mark.login
     @pytest.mark.negative
     def test_negative_username(self, driver):
-
         # Navigate to webpage
         driver.get("https://practicetestautomation.com/practice-test-login/")
         # Type username incorrectUser into Username field
