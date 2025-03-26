@@ -5,13 +5,20 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
+@pytest.fixture()
+def driver():
+    print("Creating chrome driver")
+    my_driver = webdriver.Chrome()
+    yield my_driver
+    print("Closing chrome driver")
+    my_driver.quit()
+
+
 class TestNegativeScenarios:
 
     @pytest.mark.login
     @pytest.mark.negative
-    def test_negative_username(self):
-        # Open page
-        driver = webdriver.Chrome()
+    def test_negative_username(self, driver):
 
         # Navigate to webpage
         driver.get("https://practicetestautomation.com/practice-test-login/")
@@ -38,8 +45,7 @@ class TestNegativeScenarios:
 
     @pytest.mark.login
     @pytest.mark.negative
-    def test_negative_password(self):
-        driver = webdriver.Chrome()
+    def test_negative_password(self, driver):
         # Navigate to webpage
         driver.get("https://practicetestautomation.com/practice-test-login/")
         # Type username student into Username field
@@ -62,6 +68,3 @@ class TestNegativeScenarios:
         # Verify error message text is Your password is invalid!
         error_message = error_message_locator.text
         assert error_message == "Your password is invalid!", "Error message is not expected"
-
-
-
