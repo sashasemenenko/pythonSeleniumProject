@@ -43,7 +43,7 @@ class TestExceptions:
         driver.find_element(By.XPATH, "//div[@id='row2']/button[@name='Save']").click()
 
         # Verify text saved
-        confirmation_element = driver.find_element(By.ID, "confirmation")
+        confirmation_element = wait.until(ec.visibility_of_element_located((By.ID, "confirmation")))
         confirmation_message = confirmation_element.text
         assert confirmation_message == "Row 2 was saved", "Confirmation message is not expected"
 
