@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b90b2e93-90b8-4619-be26-22c7debd5459" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_exceptions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,58 +30,38 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2uAvbhKTDUw9nkVvwdg3SVNkxCJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.All tests.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login_page_nagative.TestNegativeScenarios.test_negative_username.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_math.test_small_numbers.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_math.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.login tests edge.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.login tests firefox.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.login tests.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.negative test.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.positive test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.All tests.executor": "Run",
+    "Python tests.Python tests for test_exceptions.TestExceptions.test_no_such_element_exception.executor": "Run",
+    "Python tests.Python tests for test_login_page_nagative.TestNegativeScenarios.test_negative_username.executor": "Run",
+    "Python tests.Python tests for test_math.test_small_numbers.executor": "Run",
+    "Python tests.Python tests in test_math.py.executor": "Run",
+    "Python tests.debug tests.executor": "Run",
+    "Python tests.exceptions tests.executor": "Run",
+    "Python tests.login tests edge.executor": "Run",
+    "Python tests.login tests firefox.executor": "Run",
+    "Python tests.login tests.executor": "Run",
+    "Python tests.negative test.executor": "Run",
+    "Python tests.positive test.executor": "Debug",
+    "Python.1.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.login tests">
-    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonSeleniumProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.debug tests">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonSeleniumProject" />
       <option name="ENV_FILES" value="" />
@@ -116,6 +100,21 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_exceptions.TestExceptions.test_no_such_element_exception" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonSeleniumProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_exceptions.TestExceptions.test_no_such_element_exception&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for test_login_page_nagative.TestNegativeScenarios.test_negative_username" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -160,6 +159,42 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_math.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="debug tests" type="tests" factoryName="py.test" activateToolWindowBeforeRun="false">
+      <module name="pythonSeleniumProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13 (pythonSeleniumProject)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;-m debug&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="exceptions tests" type="tests" factoryName="py.test" activateToolWindowBeforeRun="false">
+      <module name="pythonSeleniumProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13 (pythonSeleniumProject)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;-m exceptions&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -254,7 +289,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.1" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python tests.All tests" />
       <item itemvalue="Python tests.login tests edge" />
@@ -262,24 +296,27 @@
       <item itemvalue="Python tests.login tests" />
       <item itemvalue="Python tests.negative test" />
       <item itemvalue="Python tests.positive test" />
+      <item itemvalue="Python tests.exceptions tests" />
+      <item itemvalue="Python tests.debug tests" />
+      <item itemvalue="Python tests.Python tests for test_exceptions.TestExceptions.test_no_such_element_exception" />
       <item itemvalue="Python tests.Python tests for test_login_page_nagative.TestNegativeScenarios.test_negative_username" />
       <item itemvalue="Python tests.Python tests for tests.test_math.test_small_numbers" />
       <item itemvalue="Python tests.Python tests in test_math.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_exceptions.TestExceptions.test_no_such_element_exception" />
         <item itemvalue="Python tests.Python tests for test_login_page_nagative.TestNegativeScenarios.test_negative_username" />
         <item itemvalue="Python tests.Python tests in test_math.py" />
         <item itemvalue="Python tests.Python tests for tests.test_math.test_small_numbers" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.1" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-14705d77f0bb-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.25659.43" />
+        <option value="bundled-python-sdk-348a24fa61fa-5312c7369657-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.23774.444" />
       </set>
     </attachedChunks>
   </component>
@@ -293,5 +330,16 @@
       <updated>1741704266715</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_login_page.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
