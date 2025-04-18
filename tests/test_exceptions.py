@@ -1,7 +1,7 @@
+import time
+
 import pytest
 from selenium.webdriver.common.by import By
-from selenium.webdriver.remote.webdriver import WebDriver
-from selenium.webdriver.support.expected_conditions import presence_of_element_located
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
@@ -23,7 +23,6 @@ class TestExceptions:
         assert row_2_input_element.is_displayed(), "Row 2 input should be displayed, but it's not"
 
     @pytest.mark.exceptions
-    @pytest.mark.debug
     def test_element_not_interactable_exception(self, driver):
         # Open page
         driver.get("https://practicetestautomation.com/practice-test-exceptions/")
@@ -47,3 +46,29 @@ class TestExceptions:
         confirmation_message = confirmation_element.text
         assert confirmation_message == "Row 2 was saved", "Confirmation message is not expected"
 
+
+    @pytest.mark.exceptions
+    @pytest.mark.debug
+    def test_invalid_element_state_exception(self, driver):
+        # Open page
+        driver.get("https://practicetestautomation.com/practice-test-exceptions/")
+
+        # Clear input field
+        row_1_edit_button = driver.find_element(By.ID, "edit_btn")
+        row_1_edit_button.click()
+
+        row_1_input_element = driver.find_element(By.XPATH, "//div[@id='row1']/input")
+        wait = WebDriverWait(driver, 10)
+        wait.until(ec.element_to_be_clickable(row_1_input_element))
+        row_1_input_element.clear()
+
+        # Type text into the input field
+        row_1_input_element.send_keys("Sushi")
+
+        row_1_save_button = driver.find_element(By.ID, "save_btn")
+        row_1_save_button.click()
+
+        # Verify text saved
+        confirmation_element = wait.until(ec.visibility_of_element_located((By.ID, "confirmation")))
+        confirmation_message = confirmation_element.text
+        assert confirmation_message == "Row 1 was saved", "Confirmation message is not expected"
