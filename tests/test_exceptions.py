@@ -1,9 +1,7 @@
-import time
-
 import pytest
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
+from selenium.webdriver.support.wait import WebDriverWait
 
 
 class TestExceptions:
@@ -46,9 +44,7 @@ class TestExceptions:
         confirmation_message = confirmation_element.text
         assert confirmation_message == "Row 2 was saved", "Confirmation message is not expected"
 
-
     @pytest.mark.exceptions
-    @pytest.mark.debug
     def test_invalid_element_state_exception(self, driver):
         # Open page
         driver.get("https://practicetestautomation.com/practice-test-exceptions/")
@@ -72,3 +68,18 @@ class TestExceptions:
         confirmation_element = wait.until(ec.visibility_of_element_located((By.ID, "confirmation")))
         confirmation_message = confirmation_element.text
         assert confirmation_message == "Row 1 was saved", "Confirmation message is not expected"
+
+    @pytest.mark.exceptions
+    @pytest.mark.debug
+    def test_stale_element_reference_exception(self, driver):
+        # Open page
+        driver.get("https://practicetestautomation.com/practice-test-exceptions/")
+
+        # Push add button
+        add_button_locator = driver.find_element(By.ID, "add_btn")
+        add_button_locator.click()
+
+        # Verify instruction text element is no longer displayed
+        wait = WebDriverWait(driver, 10)
+        assert wait.until(
+            ec.invisibility_of_element((By.ID, "instructions")), "Instruction text element should not be displayed")
